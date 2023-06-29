@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:text="@string/title"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:backgroundTint="@color/cl_green"
+            android:background="@drawable/round"
+            android:textColor="@color/cl_white"
+            android:fontFamily="@font/cairobold"
+
+            >
+
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/round2"
+            android:backgroundTint="@color/cl_gray_sec"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                ></ImageView>
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:layout_gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:textColor="@color/cl_gray"
+                android:fontFamily="@font/cairoreg"
+                android:hint="بحث..."
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_circle_24"
+                ></ImageView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="يوجد حاليا 20 قرار قضائي"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/cairoreg"
+                android:textColor="@color/cl_gray"
+                android:id="@+id/totalnumber"></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_circle_24"
+                ></ImageView>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="30dp"
+            android:id="@+id/rv_arret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/each_arret"
+             />
+    </LinearLayout>
+
+
+
+</FrameLayout>

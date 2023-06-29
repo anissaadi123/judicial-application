@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item  android:title="المفضلة" android:id="@+id/favori" android:icon="@drawable/ic_baseline_favorite_24"  android:iconTint="@color/cl_green"/>
+    <item android:id="@+id/home" android:icon="@drawable/ic_baseline_home_24" android:iconTint="@color/cl_green"
+        android:title="الرئيسية" />
+    <item  android:title="تحميل"  android:id="@+id/json" android:icon="@drawable/ic_baseline_upload_file_24"  android:iconTint="@color/cl_green"/>
+</menu>
